@@ -7,6 +7,10 @@ html {
 	background-color: white;
 }
 
+#navBar {
+	background: none;
+}
+
 .hero-image {
 	/* - HERO -
     This code controls your "hero image." You will need to change hero.jpg to match your asset */
