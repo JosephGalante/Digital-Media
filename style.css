@@ -34,7 +34,7 @@ html {
 	font-size: 250%;
 }
 
-.hero-text h1{
+.hero-text h1 {
 	font-size: 60px;
 	font-weight: bold;
 }
@@ -50,7 +50,7 @@ html {
 	font-weight: bold;
 }
 
-h2{
+h2 {
 	color: white;
 	font-weight: bold;
 }
@@ -234,39 +234,45 @@ The following CSS is responsible for your photo grid .row, .column, .column img 
 }
 
 #study {
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 20px;
-    width: 0;
-    animation: typing 2s steps(40, end) forwards;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 20px;
+	width: 0;
+	animation: typing 2s steps(40, end) forwards;
 }
 
 #study::after {
-  content: "";
-  vertical-align: middle;
-  right: -15px;
+	content: "";
+	vertical-align: middle;
+	right: -15px;
 
-  display: inline-block;
-  background-color: white;
-  width: 10px;
+	display: inline-block;
+	background-color: white;
+	width: 10px;
 
-  height: 24px;
+	height: 24px;
 
-  animation: blink 1s step-end infinite;
+	animation: blink 1s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1.0; }
-  50% { opacity: 0.0; }
+	0%,
+	100% {
+		opacity: 1.0;
+	}
+	50% {
+		opacity: 0.0;
+	}
 }
-
-
-
 
 /* Responsive layout - makes grid a one column-layout instead of two or three columns */
 @media screen and (max-width: 800px) {
@@ -313,8 +319,6 @@ this CSS element centers text elements*/
 	text-align: center;
 }
 
-.nav-item:hover{	
+.nav-item:hover {
 	text-decoration: 2px white underline;
-	
 }
-
