@@ -3,8 +3,8 @@ html {
 	/* this controls universal elements on your site. Everything in here can be overridden by styles below. */
 	height: 100%;
 	margin: 0;
-	font-family: Verdana, Helvetica, Arial, san-serif;
-	background-color: white;
+	font-family: 'Courier New', Courier, monospace;
+	background-color: black;
 }
 
 #navBar {
@@ -14,7 +14,7 @@ html {
 .hero-image {
 	/* - HERO -
     This code controls your "hero image." You will need to change hero.jpg to match your asset */
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG_1487.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("grimaud.jpg");
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -34,6 +34,11 @@ html {
 	font-size: 250%;
 }
 
+.hero-text h1{
+	font-size: 60px;
+	font-weight: bold;
+}
+
 .hero-text h2 {
 	/* This section adds the text stylings for your hero block */
 	display: block;
@@ -45,17 +50,22 @@ html {
 	font-weight: bold;
 }
 
+h2{
+	color: white;
+	font-weight: bold;
+}
+
 .textblock {
 	/* This sets up the spacing inside of the textblock divs. I'd encourage y'all to play around with this padding to see what happens. You can really change the feel of your site by rearranging elements via padding and other methods. See https://www.w3schools.com/css/css_padding.asp for info on padding and https://www.w3schools.com/css/css_positioning.asp for div position*/
-	padding-top: 100px;
-	padding-bottom: 100px;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .textblock p {
 	/* This section lets you adjust the text style for your paragraph element text in the textblock div. */
-	color: #000000;
+	color: white;
 	font-size: 1em;
 	line-height: 1.2;
 }
@@ -223,6 +233,41 @@ The following CSS is responsible for your photo grid .row, .column, .column img 
 	width: 100%;
 }
 
+#study {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20px;
+    width: 0;
+    animation: typing 2s steps(40, end) forwards;
+}
+
+#study::after {
+  content: "";
+  vertical-align: middle;
+  right: -15px;
+
+  display: inline-block;
+  background-color: white;
+  width: 10px;
+
+  height: 24px;
+
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+}
+
+
+
+
 /* Responsive layout - makes grid a one column-layout instead of two or three columns */
 @media screen and (max-width: 800px) {
 	.column {
@@ -267,3 +312,9 @@ this CSS element centers text elements*/
 #footer {
 	text-align: center;
 }
+
+.nav-item:hover{	
+	text-decoration: 2px white underline;
+	
+}
+
