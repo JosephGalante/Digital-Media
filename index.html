@@ -40,7 +40,7 @@
               <a class="nav-link" href="#twine">Twine Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#imaginary">Imaginary App</a>
+              <a class="nav-link" href="#imagine">Imaginary App</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#extra">Extra</a>
@@ -53,66 +53,104 @@
     <div class="hero-text">
       <h1>I am Joe Galante</h1>
       <div id="containh2">
-        <h2 id="study">And I Study Computer Science (and studied Finance, unfortunately)</h2>
+        <h2 id="study">And I Study Computer Science (and Finance, unfortunately)</h2>
       </div>
     </div>
   </div>
 
+
+
+
   <div class="textblock" id="aboutme">
     <h2>About Me</h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <a
-        href=https://www.w3schools.com/html/html_links.asp>laborum</a>.</p>
+    <p>Hi there, I'm Joe. I'd like to think of myself as an introverted extrovert, an avid learner, and a jokester at heart. I love 
+      goofing around with my freinds, playing guitar and bass, listening to all kinds of music, and coding. Outside of my academic interests, I love rock climbing, biking, and exploring new places around Pittsburgh.
+      A few fun facts about me, I love to cook, I do Magic professionally (no, seriously. Check me out <a href=https://www.galantemagic.com>here</a>).</p>
   </div>
-
-  <!--Replace the image here. You can also control image width and height %. This is the second way we can control the size of images on our website.-->
-
-  <div>
-    <img src="cats.png" alt="two orange cats on a shed roof-describe the image HERE for accessibility purposes"
-      class="center-img" style="max-width:50%; max-height:50%;">
-  </div>
-
-  <!--in this next section you will explain a little more about your family (what does family means to you? Who are the people that influenced you on this path along which you now stand).-->
 
   <div class="textblock" id="family">
-    <h2>Family and Home</h2>
+    <h2> My Family</h2>
   </div>
 
-  <!--Show us. Find those beautiful, meaningful "family" photos and pictures of your place (only you can define family). If you are concerned about issues of privacy, you can always use stock images, or get creative. Add these photos to your project folder, making sure the files end in .jpg or .png and replace the names in the grid code below. You can add more images if you wish, or subtract...you might also need to move content around to achieve balance. See what happens – sometimes you have to be playful to find the purpose of things. Since these images are smaller, you will want to resize your images to less than 600px in width. This will improve load time and thus general accesibility. Don't forget to add alt="text"-->
-
-  <!--A photo grid uses rows and column classes to create some divisions on the page that will scale with mobile devices. The style.css page provides other attributes that will adjust the image depending on the size of screens.-->
-
-
   <div class="row images">
-    <div class="column">
-      <img id="test" src="dad.jpg" alt="describe the image HERE for accessibility purposes">
+    <div class="column caption">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner" data-interval="1000">
+          <div class="carousel-item active">
+            <img src="dad.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="mom.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="leo.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="friends.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="kong.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="ree.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="row images">
+    <div class="column caption">
+      <img src="dad.jpg" alt="describe the image HERE for accessibility purposes">
       <img src="leo.jpg" alt="describe the image HERE for accessibility purposes">
     </div>
-    <div class="column">
+    <div class="column caption">
       <img src="ree.jpg" alt="describe the image HERE for accessibility purposes">
       <img src="kong.jpg" alt="describe the image HERE for accessibility purposes">
     </div>
-    <div class="column">
+    <div class="column caption">
       <img src="friends.jpg" alt="describe the image HERE for accessibility purposes">
       <img src="mom.jpg" alt="describe the image HERE for accessibility purposes">
     </div>
-  </div>
+  </div> -->
 
   <!--Time to write. Flesh it out! Define family, qualify it, explicate it telling us why these people are important, and how they contributed to how you got here and where you are going. What about "home." What  does that mean to you? In what ways is it significant in determining where your are going? Replace the content between <h2> and </h2> that says "Lorem ipsum."-->
 
   <div class="textblock">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Here you'll see some pictures of people that are most important to me in this world. Some pictures with my sister, father, and mother, 
+      my family friend from Paris, and my good group of friends here at Pitt. Through the good times and the bad times, there's no other family or group of friends with whom I'd rather
+    weather the storm.</p>
   </div>
 
 
 
-  <!--Now we are moving into the kinds of media that contributes to your everyday discourse. This might sound weird, but Ulmer argues that media has actually contributed a great deal to who you are as a person, how you language yourself, and even how you move through the world and interact with others. So, let's take some time to explore this discourse area. You have the opportunity to add video content or other significant media content. You might also add images to this section (see the bottom of this sheet for directions on how to add elements) perhaps adding a photo grid like the one you did for the "Family" section. Experiment. You can't break this thing, right? Control Z. Control Z. Control Z... -->
 
   <div class="textblock" id="video">
     <h2>Video Project</h2>
@@ -125,7 +163,9 @@
         allowfullscreen></iframe>
     </div>
 
-    <p>Here is a basic placeholder for my video project. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos earum accusamus, ipsa sed ipsam deleniti quam! Ut sit ex deleniti sint eligendi quia nesciunt tempora! Modi perspiciatis placeat illo labore?</p>
+    <p>Here is a basic placeholder for my video project. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+      earum accusamus, ipsa sed ipsam deleniti quam! Ut sit ex deleniti sint eligendi quia nesciunt tempora! Modi
+      perspiciatis placeat illo labore?</p>
   </div>
 
   <!--Between these divisions, you may want to add a new div element like an image (see the bottom of this html page for instructions) -->
@@ -135,16 +175,15 @@
   <div class="textblock" id="twine">
     <h2>Twine Project</h2>
 
-    <!--So what exactly is your community: is it actual? virtual? Where do find your ground, or at least, where do you drop anchor, you drifter, you? While we often think of communities as neighborhoods and clubs and a group of colleagues or friends, you might find community across the frontiers of the dead, and perhaps even with those who have never lived. I'll let you explain. -->
     <div>
-      <img src="cats.png" alt="two orange cats on a shed roof-describe the image HERE for accessibility purposes"
+      <img src="pnc.jpg" alt="two orange cats on a shed roof-describe the image HERE for accessibility purposes"
         class="center-img" style="max-width:100%;max-height:100%;">
     </div>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Check out the project <a href="">here</a>!</p>
   </div>
 
 
@@ -172,121 +211,37 @@
 
   </div>
 
-  <!--Like it or not, your schooling, formal and informal, for better or for worse, has been another factor that has brought you here and prepared you for this moment. Let's think through these systems, expectations, and outcomes. And let's also think a little about futurity... where is this learning, formal and informal – this unconcealing – taking you? -->
   <div class="textblock" id="imagine">
     <h2>Imaginary App</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <p>Link to app <a href="friends.pdf" target="_blank" rel="noopener noreferrer">How to win friends and influence people</a></p></p>
   </div>
 
   <!--The final step in our process will be to ensure that a smaller version of our "hero image," what Ulmer would refer to as our "wide image," repeats at the bottom of our document to better reinforce this motif.  -->
 
+  <div class="poo">
   <div id="logo">
-    <img src="cats.png" alt="two orange cats on a shed roof" style="max-width:25%;max-height:25%;">
-    <p><b>generated by <a href="https://pitt-fuego.github.io/Pitt-Fuego-Coding-Tools/">Pitt Fuego</a></b></p>
-    <p><em>Why make a spark when you can light a fire?</em></p>
+    <img src="inspect.jpg" alt="Men gathered around scientifically inspecting an object" style="max-width:100%; max-height:100%;">
+    <p>Just some guys inspecting some stuff.</p>
+  </div>
   </div>
 
+  <div class="textblock" style="text-align: left" id="extra">
+    <h2>Extra</h2>
+    <p>We recommend using our mobile-ready text sizing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+      officia deserunt mollit anim id est laborum.</p>
+  </div>
 
+  <div id="footer">
+    <div> Copyright &#169 Joe Galante, 2022. All Rights Reserved.</div>
+  </div>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-<!-- Looking to add components? You've come to the right place. Copy and paste Code Snippets and add to the body section. Adjust class properties on style.css.
-
-
-     ***Add Text Block***
-
-     (Format textblock using inline styling: text-align: left, center, justify, right; Format text: Italics: <em>italics</em>; Bold: <b>bold</b>; Link Website: <a href="link">LinkName</a>; Link Asset: <a href=filename.pdf>FileName</a>; Line Breaks: <br></br>)
-
-     (tip for composing longer content: replace <h2> with <p> and <p> for <p>) -->
-
-<div class="textblock" style="text-align: left" id="extra">
-  <h2>Extra</h2>
-  <p>We recommend using our mobile-ready text sizing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-    officia deserunt mollit anim id est laborum.</p>
-</div>
-
-
-<!-- 
-     ***Add Block Quote***
-
-     (Format text: Italics: <em>italics</em>; Bold: <b>bold</b>. For more stylings, find blockquote class on style.css) -->
-
-<div class="blockquote" style="text-align: center">
-  <h2>Excepteur sint occaecat cupidatat non proident!</h2>
-</div>
-
-
-<!-- ***Embed YouTube Video*** -->
-
-
-<!-- ***Add a Standard Image*** -->
-
-<!-- (Control image properties with inline width value.) -->
-
-<img src="fuego.jpg" alt="describe the image HERE for accessibility purposes" style="width:30%;" class="center-img">
-<p style="text-align: center"><em>Add a caption.</em></p>
-
-
-
-<!-- ***Add Image Block with Padding and Caption*** (Control image properties with inline width value.) -->
-
-<div class="imgageblock">
-  <img src="fuego.jpg" alt="describe the image HERE for accessibility purposes" style="width:100%;">
-  <p style="text-align: center"><em>Add a caption.</em></p>
-</div>
-
-
-
-<!-- ***Add a Photo Grid*** -->
-
-<div class="photogrid">
-  <div class="row">
-    <div class="column">
-      <img src="pgrid1.jpg" alt="describe the image HERE for accessibility purposes">
-      <img src="pgrid2.jpg" alt="describe the image HERE for accessibility purposes">
-    </div>
-    <div class="column">
-      <img src="pgrid3.jpg" alt="describe the image HERE for accessibility purposes">
-      <img src="pgrid4.jpg" alt="describe the image HERE for accessibility purposes">
-    </div>
-    <div class="column">
-      <img src="pgrid5.jpg" alt="describe the image HERE for accessibility purposes">
-      <img src="pgrid6.jpg" alt="describe the image HERE for accessibility purposes">
-    </div>
-  </div>
-  <p><em>Add a caption.</em></p>
-</div>
-
-
-
-
-<!-- ***Add a Copyright Footer*** -->
-
-<div id="footer">
-  <p> &#169 Joe Galante, 2022.</p>
-</div>
-
-
-
-
-<!-- ***Need something that's not here? Then you probably don't need it. But okay...go to w3 Schools*** -->
-
-
-
-<!-- Looking to publish this webtext in GitHub? Here are your next steps: -->
-
-<!-- Sign in to GitHub. Create a new repository. Name it. Click “uploading an existing file,” then select/drag and drop all of your files... all of them, index.html. style.css, readme, and your image assets. Click "commit." Now go to your repository "settings." Scroll down to "Pages." Here you will change "source" from "none" to "main" branch. This will publish your webtext online. Copy your URL from this settings page...and now it's time to circulate your webtext! Peace and love only, Stephen Quigley, University of Pittsburgh, 2021. -->

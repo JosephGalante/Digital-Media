@@ -134,18 +134,37 @@ h2 {
 	padding: 20px;
 }
 
-.images img{
-	transition: .2s ease;
+.caption img {
+	/* transition: .2s ease; */
+	transition: transform 0.25s ease;
 }
 
+.caption img:hover {
+	cursor: pointer;
+}
 
-.images img:hover {
-	opacity: 0.3 ;
+.caption img:active {
+	/* opacity: 0.3; */
+
+	/* cursor: pointer;
+	position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999; */
+	-webkit-transform: scale(2); /* or some other value */
+	transform: scale(2);
 }
 
 /* Learn other list conventions: https://www.w3schools.com/cssref/pr_list-style-type.asp */
 
 .video {
+	text-align: center;
+}
+
+#family {
 	text-align: center;
 }
 
@@ -190,7 +209,7 @@ This section of CSS helps organize images to position and center the image to sc
 This code controls that cool parallax image and scrolling effect. Change the image "fuego.jpg" below to match your asset.*/
 
 .parallax {
-	background-image: url("cats.png");
+	background-image: url("verdon 2.jpg");
 
 	/* Set a specific height */
 	height: 500px;
@@ -231,8 +250,8 @@ The following CSS is responsible for your photo grid .row, .column, .column img 
 
 /* Create 3 equal columns that sit next to each other */
 .column {
-	flex: 25%;
-	max-width: 25%;
+	flex: 50%;
+	max-width: 40%;
 	padding: 0 4px;
 }
 
@@ -299,8 +318,8 @@ this CSS element centers text elements*/
 	.video {
 		margin: auto;
 		width: 50%;
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 20px;
+		padding-bottom: 40px;
 		padding-left: 10px;
 		padding-right: 10px;
 		font-size: 125%;
@@ -314,21 +333,56 @@ this CSS element centers text elements*/
 		padding-left: 20px;
 		padding-right: 20px;
 		padding-top: 100px;
-		padding-bottom: 1000px;
+		padding-bottom: 20px;
 	}
 }
 
+.poo{
+	display: flex;
+	justify-content: center;
+}
+
 #logo {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 12pt;
-	text-align: center;
+	
+	text-align: center; 
+	position: relative;
+	height: 360px;
+  	width: 480px;
+}
+
+#logo p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  opacity: 0;
+   /* transition effect. not necessary */
+  transition: opacity 0s, visibility .2s;
+}
+
+#logo:hover img{
+	opacity: 0.5;
+	transition: opacity 0s, visibility .2s;
+}
+
+#logo:hover p{
+	opacity: 1;
+	
+}
+
+#logo img:hover {
+	cursor: pointer;
 }
 
 #footer {
 	text-align: center;
+	color: rgb(134, 134, 134);
+	height: 4em;
+	background-color: rgb(36, 36, 36);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .nav-item:hover {
