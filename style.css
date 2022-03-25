@@ -388,3 +388,7 @@ this CSS element centers text elements*/
 .nav-item:hover {
 	text-decoration: 2px white underline;
 }
+
+.imagine {
+	text-indent: 3em;
+}
